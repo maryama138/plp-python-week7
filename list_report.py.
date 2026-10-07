@@ -1,0 +1,21 @@
+items = ["bread", "avocado", "milk", "sweet potatoes", "tea"]
+
+count = 0
+longest = ""
+
+print("Shopping List:")
+
+number = 1
+
+for item in items:
+    print(number, ".", item)
+    number += 1
+
+    if len(item) > 4:
+        count += 1
+
+    if len(item) > len(longest):
+        longest = item
+
+print("Items with more than 4 letters:", count)
+print("Longest item:", longest)
